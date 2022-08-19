@@ -1,0 +1,12 @@
+{  
+  "root": true,
+  "env": {
+    "node": true
+  },
+ "parserOptions": {
+    "ecmaVersion": 2022,
+    "ecmaFeatures": { "impliedStrict": true },
+    "sourceType": "module"
+  },  
+  "extends": ["eslint:recommended"]
+}
