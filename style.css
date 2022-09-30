@@ -1,7 +1,23 @@
-.heading {
-  color: red;
+.wrapper {
+  display: inline-grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
 }
 
-h1 {
-  color: plum;
+.calculator-button {
+  border-width: 1px;
+  border-color: gray;
+  border-style: solid;
+  padding: 20px;
+  text-align: center;
+  border-radius: 3px;
+  background: linear-gradient(to bottom, white, white 50%, lightgrey);
+}
+
+.double-column {
+  grid-column: span 2;
+}
+
+.double-row {
+  grid-row: span 2;
 }
