@@ -1,22 +1,33 @@
 :root {
-  --cultured: hsl(210, 17%, 98%);
-  --cultured-2: hsl(210, 16%, 93%);
-  --gainsboro: hsl(210, 14%, 89%);
-  --light-gray: hsl(210, 14%, 83%);
-  --cadet-blue-crayola: hsl(210, 11%, 71%);
-  --sonic-silver: hsl(208, 7%, 46%);
-  --davys-grey: hsl(210, 9%, 31%);
-  --onyx: hsl(210, 10%, 23%);
-  --eerie-black: hsl(210, 11%, 15%);
+  --cultured: hsl(210deg 17% 98%);
+  --cultured-2: hsl(210deg 16% 93%);
+  --gainsboro: hsl(210deg 14% 89%);
+  --light-gray: hsl(210deg 14% 83%);
+  --cadet-blue-crayola: hsl(210deg 11% 71%);
+  --sonic-silver: hsl(208deg 7% 46%);
+  --davys-grey: hsl(210deg 9% 31%);
+  --onyx: hsl(210deg 10% 23%);
+  --eerie-black: hsl(210deg 11% 15%);
+  --border-radius: 3px;
 }
 
 #app {
   display: grid;
   place-content: center;
-  min-height: 100vh; /*100 percent of window */
+  min-height: 100vh; /* 100 percent of window */
 }
 
-.calculator-button-container {
+.calculator-input {
+  margin-bottom: 15px;
+  border: 2px solid var(--cadet-blue-crayola);
+  border-radius: var(--border-radius);
+  padding: 5px 10px;
+  font-size: 1.2rem;
+  min-height: 2.25rem;
+  text-align: right;
+}
+
+.calculator-buttons-container {
   display: inline-grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 10px;
@@ -28,7 +39,7 @@
   border-style: solid;
   padding: 20px;
   text-align: center;
-  border-radius: 3px;
+  border-radius: var(--border-radius);
   background-color: var(--cultured-2);
   transition: background-color 150ms;
 }
@@ -45,6 +56,7 @@
   outline: 1px solid var(--cadet-blue-crayola);
   outline-offset: 3px;
 }
+
 .double-column {
   grid-column: span 2;
 }
@@ -52,5 +64,3 @@
 .double-row {
   grid-row: span 2;
 }
-
-/*Focus and active Learn and apply */
