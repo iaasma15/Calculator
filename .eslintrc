@@ -1,12 +1,13 @@
-{  
+{
   "root": true,
   "env": {
-    "node": true
+    "node": true,
+    "browser": true
   },
- "parserOptions": {
+  "parserOptions": {
     "ecmaVersion": 2022,
     "ecmaFeatures": { "impliedStrict": true },
     "sourceType": "module"
-  },  
+  },
   "extends": ["eslint:recommended"]
 }
